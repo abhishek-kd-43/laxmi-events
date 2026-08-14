@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laxmi Event Management and Multi Services in Jamkhandi, Bagalkot. Weddings, birthdays, engagements, corporate events, stage decoration, catering, DJ, photography and flower decoration.">
+  <title>Laxmi Events | Event Management in Jamkhandi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171717;--muted:#6b6b6b;--paper:#fffaf4;--card:#fff;--accent:#b88943;--line:#eadfce}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .brand span{display:block;font-size:11px;color:var(--accent);letter-spacing:.18em;margin-top:-3px}
+    nav{display:flex;gap:24px;font-size:14px;font-weight:600}
+    .nav-cta{padding:11px 17px;border-radius:999px;background:var(--ink);color:white}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 0 70px;background:
+      radial-gradient(circle at 15% 20%,rgba(184,137,67,.15),transparent 28%),
+      radial-gradient(circle at 85% 30%,rgba(184,137,67,.12),transparent 25%)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:18px}
+    h1,h2{font-family:"Playfair Display",serif}
+    h1{font-size:clamp(48px,8vw,88px);line-height:1.02;max-width:900px;margin:auto}
+    .hero p{max-width:700px;margin:24px auto 30px;color:var(--muted);font-size:18px}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:700}
+    .primary{background:var(--ink);color:#fff}.secondary{border:1px solid var(--ink)}
+    section{padding:88px 0}
+    .section-head{max-width:720px;margin-bottom:42px}
+    .section-head h2{font-size:clamp(34px,5vw,54px);line-height:1.1;margin:8px 0 14px}
+    .section-head p{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:22px}
+    .icon{font-size:30px;margin-bottom:14px}.service h3{font-size:19px;margin-bottom:7px}.service p{color:var(--muted);font-size:14px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about-card{background:#f2e7d7;border-radius:28px;padding:40px;min-height:360px;display:flex;align-items:end}
+    .about-card strong{font-family:"Playfair Display",serif;font-size:38px}
+    .about-copy p{color:var(--muted);margin:16px 0}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+    .fact{border-top:1px solid var(--line);padding-top:14px}.fact b{display:block;font-size:24px}.fact span{font-size:12px;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .gallery .tile{min-height:240px;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#ead9bf,#f8efe2);display:flex;align-items:end;padding:20px;font-weight:700}
+    .gallery .tile:nth-child(2){min-height:320px}.gallery .tile:nth-child(4){min-height:320px}
+    .quote{background:var(--ink);color:white;border-radius:30px;padding:58px}
+    .quote h2{font-size:46px;max-width:700px;line-height:1.1}.quote p{color:#cfcfcf;margin:15px 0 25px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+    .contact-list{display:grid;gap:14px}
+    .contact-item{padding:18px;background:white;border:1px solid var(--line);border-radius:18px}
+    .contact-item small{display:block;color:var(--muted);margin-bottom:3px}
+    .map{min-height:310px;border-radius:24px;border:1px solid var(--line);background:#efe5d6;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+    footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:30;background:#1f9d55;color:white;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+    @media(max-width:800px){nav{display:none}.services,.gallery,.about,.contact{grid-template-columns:1fr}.gallery .tile,.gallery .tile:nth-child(2),.gallery .tile:nth-child(4){min-height:220px}.quote{padding:35px}.quote h2{font-size:38px}.hero{min-height:70vh}.facts{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#">Laxmi Events<span>Management & Multi Services</span></a>
+    <nav>
+      <a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="tel:+917204658882">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Jamkhandi • Bagalkot • Karnataka</div>
+    <h1>Make every celebration unforgettable.</h1>
+    <p>Laxmi Event Management and Multi Services brings together decoration, planning, catering, music and event services for weddings, birthdays, engagements, corporate functions and more.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://wa.me/917204658882?text=Hello%20Laxmi%20Events%2C%20I%20would%20like%20to%20enquire%20about%20an%20event.">Get a Quote on WhatsApp</a>
+      <a class="btn secondary" href="#services">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">What we do</div><h2>Everything your event needs.</h2><p>From the first idea to the final celebration, choose individual services or a complete event solution.</p></div>
+    <div class="services">
+      <article class="service"><div class="icon">💍</div><h3>Wedding Events</h3><p>Planning, decoration and coordination for memorable weddings.</p></article>
+      <article class="service"><div class="icon">🎂</div><h3>Birthday Parties</h3><p>Theme, stage and venue decoration for birthdays of every age.</p></article>
+      <article class="service"><div class="icon">💐</div><h3>Engagements & Receptions</h3><p>Elegant setups for engagements, receptions and family celebrations.</p></article>
+      <article class="service"><div class="icon">🏢</div><h3>Corporate Events</h3><p>Professional event arrangements for meetings, functions and celebrations.</p></article>
+      <article class="service"><div class="icon">🎪</div><h3>Stage & Venue Decoration</h3><p>Stage, backdrop, lighting and venue styling tailored to your event.</p></article>
+      <article class="service"><div class="icon">🍽️</div><h3>Catering</h3><p>Food and catering arrangements to complete your celebration.</p></article>
+      <article class="service"><div class="icon">🎧</div><h3>DJ & Music</h3><p>Music and entertainment arrangements for lively celebrations.</p></article>
+      <article class="service"><div class="icon">📸</div><h3>Photography</h3><p>Event photography arrangements to capture important moments.</p></article>
+      <article class="service"><div class="icon">🌸</div><h3>Flower Decoration</h3><p>Floral styling and decorative details for a beautiful atmosphere.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div class="about-card"><div><div class="eyebrow">About Laxmi Events</div><strong>Local expertise. Personal service. Memorable events.</strong></div></div>
+    <div class="about-copy">
+      <div class="eyebrow">Since 2018</div>
+      <h2>Trusted event services in Jamkhandi.</h2>
+      <p>Laxmi Event Management and Multi Services is a local event-management business serving Jamkhandi and surrounding areas in Bagalkot district.</p>
+      <p>We help customers bring their celebrations together with practical planning and a wide range of event services under one roof.</p>
+      <div class="facts"><div class="fact"><b>8+</b><span>Years in business</span></div><div class="fact"><b>5★</b><span>Google rating shown in listing</span></div><div class="fact"><b>9+</b><span>Core services</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Our work</div><h2>Celebrations worth remembering.</h2><p>We will replace these gallery tiles with your actual event photographs. For now, the design is ready for your business photos.</p></div>
+    <div class="gallery">
+      <div class="tile">Wedding Decoration</div><div class="tile">Stage & Venue</div><div class="tile">Birthday Celebration</div>
+      <div class="tile">Engagement Event</div><div class="tile">Corporate Function</div><div class="tile">Flower & Theme Decor</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="quote">
+      <div class="eyebrow">Plan your event</div>
+      <h2>Tell us what you're celebrating. We'll help you plan it.</h2>
+      <p>Call or WhatsApp us with your event date, location, type of event and approximate guest count.</p>
+      <a class="btn" style="background:white;color:#171717" href="https://wa.me/917204658882?text=Hello%20Laxmi%20Events%2C%20I%20want%20to%20plan%20an%20event.%0AEvent%3A%20%0ADate%3A%20%0ALocation%3A%20%0AGuests%3A%20">Start on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Contact</div><h2>Let's make your event special.</h2></div>
+    <div class="contact">
+      <div class="contact-list">
+        <div class="contact-item"><small>Phone / WhatsApp</small><a href="tel:+917204658882"><strong>+91 72046 58882</strong></a></div>
+        <div class="contact-item"><small>Email</small><a href="mailto:kolurshridar@gmail.com"><strong>kolurshridar@gmail.com</strong></a></div>
+        <div class="contact-item"><small>Address</small><strong>APMC Yard, Prabhat Nagar, Jamkhandi, Karnataka 587301</strong></div>
+        <div class="contact-item"><small>Service Area</small><strong>Jamkhandi • Bagalkot • Nearby areas</strong></div>
+      </div>
+      <div class="map">
+        <div><div style="font-size:44px">📍</div><h3>Laxmi Event Management & Multi Services</h3><p>APMC Yard, Prabhat Nagar, Jamkhandi, Karnataka 587301</p><br><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Laxmi%20Event%20Management%20and%20Multi%20Services%2C%20APMC%20Yard%2C%20Jamkhandi%2C%20Karnataka">Open in Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Laxmi Event Management and Multi Services. All rights reserved.</div></footer>
+<a class="float" href="https://wa.me/917204658882?text=Hello%20Laxmi%20Events%2C%20I%20want%20to%20enquire%20about%20an%20event.">WhatsApp</a>
+</body>
+</html>
